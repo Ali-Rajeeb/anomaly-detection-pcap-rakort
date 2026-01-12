@@ -1,0 +1,7 @@
+﻿.venv/
+__pycache__/
+*.pyc
+data/pcap/
+reports/figures/
+reports/outputs/
+.DS_Store
