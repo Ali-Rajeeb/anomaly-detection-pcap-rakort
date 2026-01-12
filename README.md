@@ -20,6 +20,20 @@ Bu proje, ham ağ trafiği (PCAP/PCAPNG) üzerinden \*\*anomali tespiti\*\* yapa
 
 
 
+Ham paketleri okudu
+
+Paketten ölçülebilir özet özellikler (features) üretti
+
+“Normal trafik”ten (baseline) modeli eğitti
+
+Test trafiğini modele verip anomali skorladı
+
+Ek olarak port taraması / trafik artışı gibi davranışları kural ile yakaladı
+
+Sonuçları CSV + grafik olarak raporladı
+
+Her şeyi GitHub’a koydu (kod + README + örnek figürler)
+
 ---
 
 
