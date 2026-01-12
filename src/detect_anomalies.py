@@ -64,7 +64,7 @@ def add_rules_host(train_host: pd.DataFrame, test_host: pd.DataFrame):
     q_syn   = float(np.quantile(train_host["tcp_syn"].fillna(0), 0.999))
 
     port_thr = max(30.0, q_ports)   # min 30 port / pencere
-    syn_thr  = max(80.0, q_syn)     # min 80 SYN / pencere
+    syn_thr  = max(20.0, q_syn)     # min 80 SYN / pencere
 
     test_host["rule_portscan"] = (
         (test_host["uniq_dst_ports"].fillna(0) >= port_thr) &
@@ -174,3 +174,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
